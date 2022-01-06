@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       0c144ad5-a17c-4f62-b8d5-06ca5720fe2d
+:END:
+#+title: HTTP Status Codes
+
+Status codes are issued by a server in response to a client's request made to the server. It includes codes from IETF Request for Comments (RFCs), other specifications, and some additional codes used in some common applications of the HTTP. The first digit of the status code specifies one of five standard classes of responses. The message phrases shown are typical, but any human-readable alternative may be provided. Unless otherwise stated, the status code is part of the HTTP/1.1 standard (RFC 7231).
+
+1xx informational response
