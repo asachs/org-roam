@@ -111,47 +111,187 @@ What are 5xx class responses?
 5xx class responses indicate cases in which the server is aware that it has encountered an error or is otherwise incapable or performing the request. Except when responding to HEAD requests, the server should include an entity containing an explanation of the error situation, and indicate whether it is a temporary or permanent failure. Likewise, user agents should display any included entity to the user. This class of response are applicable to any request method.
 
 
+* 1xx informational responses
 ** 100 continue
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:END:
+*** Front
+What does HTTP status code 100 mean?
+*** Back
+100 continue
+
 The server has received the request header and the client should proceed to send the request body (in the case of a request for which a body needs to be sent; for example, a POST request). Sending a large request body to the server after a request has been rejected for inappropriate headers would be inefficient. To have a server check the request's headers, a client must send ~Expect: 100-continue~ status code in reponse before sending the body. If the client receives an error code such as a 403 (Forbidden) or a 405 (Method Not Allowed) then it should not send the request's body. The response ~417 Expectation Failed~ indicates that the request should be repeated without the ~Expect~ header as it indicates that the server does not support expectations (this is the case, for example. of HTTP/1.0 servers)
 
 ** 101 Switching Protocols
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:END:
+*** Front
+What does HTTP status code 101 mean?
+*** Back
+101 Switching Protocols
+
 The requestor has asked the server to switch protocols and the server has agreed to do so.
 
 ** 102 Processing (WebDAV; RFC 2518)
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:END:
+*** Front
+What does HTTP status code 102 mean?
+*** Back
+102 Processing (WebDAV; RFC 2518)
+
 A WebDAV request may contain many sub-requests involving file operations, requiring a long time to complete the request. This code indicates that the server has recieved and is processing the request, but no response is available yet. This prevents the client from timing out and assuming the request was lost.
 
+
 ** 103 Early Hints (RFC 8297)
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:END:
+*** Front
+What does HTTP status code 103 mean?
+*** Back
+103 Early Hints (RFC 8297)
+
 Used to return some reponse hearders before final HTTP message.
 
 * 2xx success
-This class of status codes indicates the action requested by the client was recieved, understood, and accepted.
-
 ** 200 Ok
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:END:
+*** Front
+What does HTTP status code 200 mean?
+*** Back
+200 Ok
+
 Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request, the response will contain an entity describing or containing the result of the action.
 
 ** 201 Created
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:END:
+*** Front
+What does HTTP status code 201 mean?
+*** Back
+201 Created
+
 The request has been fulfilled, resulting in the creation of a new resource.
 
 ** 202 Accepted
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:END:
+*** Front
+What does HTTP status code 202 mean?
+*** Back
+202 Accepted
+
 The request has been accepted for processing, but the processing has not been completed. The request might or might not be acted upon, and be disallowed when processing occurs.
 
-** 203 Non-Authority Information (since HTTP/1.1)
+** 203 Non-Authoritative Information (since HTTP/1.1)
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:END:
+*** Front
+What does HTTP status code 203 mean?
+*** Back
+203 Non-Authoritative Information (since HTTP/1.1)
+
 The server is a transforming proxy (e.g. a Web Accelerator) that recieved a 200 ok from it's origin, but is returning a modified version of the origin's response.
 
 ** 204 No Content
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:END:
+*** Front
+What does HTTP status code 204 mean?
+*** Back
+204 No Content
+
 The server successfully processed the request, and is not returning any content.
 
 ** 205 Reset Content
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:END:
+*** Front
+What does HTTP status code 205 mean?
+*** Back
+205 Reset Content
+
 The server successfully processed the request, asks that the requester reset its document view, and is not returning any content.
 
 ** 206 Partial Content (RFC 7233)
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:END:
+*** Front
+What does HTTP status code 206 mean?
+*** Back
+206 Partial Content (RFC 7223)
+
 The server is delivering only part of the resource (byte serving) due to a range header sent by the client. The range header is used by HTTP clients to enable resuming of interrupted downloads, or split a download into multiple simultaneous streams.
 
 ** 207 Multi-Status (WebDAV; RFC 4918)
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:END:
+*** Front
+What does HTTP status code 207 mean?
+*** Back
+207 Multi-Status (WebDAV; RFC 4918)
+
 The message body that follows is by default an XML message and can contain a number of separate response codes, depending on how many sub-requests were made.
 
 ** 208 Already Reported (WebDAV; RFC 5842)
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:END:
+*** Front
+What does HTTP status code 208 mean?
+*** Back
+208 Already Reported (WebDAV; RFC 5842)
+
 The members of a DAV binding have already been enumerated in a preceding part of the (multistatus) response, and are not being included again.
 
 ** 226 IM Used (RFC 3229)
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:END:
+*** Front
+What does HTTP status code 226 mean?
+*** Back
+226 IM Used (RFC 3229)
+
 The server has fulfilled a request for the resource, and the response is a representation of the result of one or more instance-manipulations applied to the current instance.
