@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       a3f4f441-25ba-4c37-8d98-b67081855ef1
+:ROAM-REFS: https://www.thejournal.ie
+:END:
+#+title: thejournal.ie

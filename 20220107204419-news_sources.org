@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       69f4856f-04f1-4075-a868-49c633b1ae4c
+:END:
+#+title: News Sources
+
+* Ireland
+[[id:a3f4f441-25ba-4c37-8d98-b67081855ef1][thejournal.ie]]
+[[id:ce532b11-d897-4799-867c-ca0140c079e9][Independant.ie]]
