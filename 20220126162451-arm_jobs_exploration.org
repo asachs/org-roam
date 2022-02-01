@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       155fe241-ebf8-462d-a120-cee032e42f7d
+:END:
+#+title: ARM Jobs Exploration
+
+Reviewing the ARM Jobs code to become familiar with it and look at existing telemetry.
+This is all with an eye to identify a way to reliably catch the issue of roles crashing without emitting telemetry and effectively failing a specific job type. IcM https://portal.microsofticm.com/imp/v3/incidents/details/283061315/home.
+
+Jobs rely on ResourceStack as the underlying framework https://dev.azure.com/msazure/One/_git/AzureUX-ResourceStack
+
+Jobs are created via JobBuilder.cs - https://dev.azure.com/msazure/One/_git/AzureUX-ResourceStack?path=/src/common/jobs/Api/JobBuilder.cs&version=GBmaster&line=1&lineEnd=2&lineStartColumn=1&lineEndColumn=1&lineStyle=plain&_a=contents
+
+Jobs have a Dispatcher Client via JobDispatcherClient.cs - https://dev.azure.com/msazure/One/_git/AzureUX-ResourceStack?path=/src/common/jobs/Api/JobDispatcherClient.cs&version=GBmaster&line=1&lineEnd=2&lineStartColumn=1&lineEndColumn=1&lineStyle=plain&_a=contents
+
+InstrumentationSource - IJobDispatcherClientInstrumentationSource - https://dev.azure.com/msazure/One/_git/AzureUX-ResourceStack?path=/src/common/jobs/Instrumentation/IJobDispatcherClientInstrumentationSource.cs&version=GBmaster&line=1&lineEnd=2&lineStartColumn=1&lineEndColumn=1&lineStyle=plain&_a=contents

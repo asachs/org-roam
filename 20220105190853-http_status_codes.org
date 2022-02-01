@@ -117,6 +117,7 @@ What are 5xx class responses?
 :ANKI_DECK: Web Dev
 :ANKI_NOTE_TYPE: Basic
 :ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1643111254333
 :END:
 *** Front
 What does HTTP status code 100 mean?
@@ -130,6 +131,7 @@ The server has received the request header and the client should proceed to send
 :ANKI_DECK: Web Dev
 :ANKI_NOTE_TYPE: Basic
 :ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1643111254446
 :END:
 *** Front
 What does HTTP status code 101 mean?
@@ -143,6 +145,7 @@ The requestor has asked the server to switch protocols and the server has agreed
 :ANKI_DECK: Web Dev
 :ANKI_NOTE_TYPE: Basic
 :ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1643111254546
 :END:
 *** Front
 What does HTTP status code 102 mean?
@@ -157,6 +160,7 @@ A WebDAV request may contain many sub-requests involving file operations, requir
 :ANKI_DECK: Web Dev
 :ANKI_NOTE_TYPE: Basic
 :ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1643111254643
 :END:
 *** Front
 What does HTTP status code 103 mean?
@@ -171,6 +175,7 @@ Used to return some reponse hearders before final HTTP message.
 :ANKI_DECK: Web Dev
 :ANKI_NOTE_TYPE: Basic
 :ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1643111254744
 :END:
 *** Front
 What does HTTP status code 200 mean?
@@ -184,6 +189,7 @@ Standard response for successful HTTP requests. The actual response will depend 
 :ANKI_DECK: Web Dev
 :ANKI_NOTE_TYPE: Basic
 :ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1643111254843
 :END:
 *** Front
 What does HTTP status code 201 mean?
@@ -197,6 +203,7 @@ The request has been fulfilled, resulting in the creation of a new resource.
 :ANKI_DECK: Web Dev
 :ANKI_NOTE_TYPE: Basic
 :ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1643111254943
 :END:
 *** Front
 What does HTTP status code 202 mean?
@@ -210,6 +217,7 @@ The request has been accepted for processing, but the processing has not been co
 :ANKI_DECK: Web Dev
 :ANKI_NOTE_TYPE: Basic
 :ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1643111255045
 :END:
 *** Front
 What does HTTP status code 203 mean?
@@ -223,6 +231,7 @@ The server is a transforming proxy (e.g. a Web Accelerator) that recieved a 200 
 :ANKI_DECK: Web Dev
 :ANKI_NOTE_TYPE: Basic
 :ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1643111255143
 :END:
 *** Front
 What does HTTP status code 204 mean?
@@ -236,6 +245,7 @@ The server successfully processed the request, and is not returning any content.
 :ANKI_DECK: Web Dev
 :ANKI_NOTE_TYPE: Basic
 :ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1643111255243
 :END:
 *** Front
 What does HTTP status code 205 mean?
@@ -249,6 +259,7 @@ The server successfully processed the request, asks that the requester reset its
 :ANKI_DECK: Web Dev
 :ANKI_NOTE_TYPE: Basic
 :ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1643111255346
 :END:
 *** Front
 What does HTTP status code 206 mean?
@@ -262,6 +273,7 @@ The server is delivering only part of the resource (byte serving) due to a range
 :ANKI_DECK: Web Dev
 :ANKI_NOTE_TYPE: Basic
 :ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1643111255444
 :END:
 *** Front
 What does HTTP status code 207 mean?
@@ -275,6 +287,7 @@ The message body that follows is by default an XML message and can contain a num
 :ANKI_DECK: Web Dev
 :ANKI_NOTE_TYPE: Basic
 :ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1643111255546
 :END:
 *** Front
 What does HTTP status code 208 mean?
@@ -288,6 +301,7 @@ The members of a DAV binding have already been enumerated in a preceding part of
 :ANKI_DECK: Web Dev
 :ANKI_NOTE_TYPE: Basic
 :ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1643111255644
 :END:
 *** Front
 What does HTTP status code 226 mean?
@@ -295,3 +309,117 @@ What does HTTP status code 226 mean?
 226 IM Used (RFC 3229)
 
 The server has fulfilled a request for the resource, and the response is a representation of the result of one or more instance-manipulations applied to the current instance.
+
+* 3xx redirect
+** 300 Multiple Choices
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1643739552355
+:END:
+*** Front
+What does HTTP status code 300 mean?
+*** Back
+300 Mutliple Choices
+
+Indicates multiple options for the resource from which the client may choose (via agent-drive content negotiation). For example, this code could be used top present multiple video format options, to list files with different filename extensions, or to suggest word-sense disambiguation.
+** 301 Moved Permanently
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1643739552462
+:END:
+*** Front
+What does HTTP status code 301 mean?
+*** Back
+This and all future requests should be directed to the given URI
+** 302 Found (Previously "Moved Temporarily")
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1643739552557
+:END:
+*** Front
+What does HTTP status code 302 mean?
+*** Back
+Tells the client to look at (browse to) another URL. The HTTP/1.0 specification (RFC 1945) required the client to perform a temporary redirect with the same method (the original describing phrase was "Moved Permanently"), but popular browsers implemented 302 redirects by changing the method to GET. Therefore, HTTP/1.1 added status codes 303 and 307 to distinguish between the two behaviors.
+
+** 303 See Other (since HTTP/1.1)
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:ANKI_FAILURE_REASON: cannot create note because it is a duplicate
+:END:
+*** Front
+What does HTTP status code 303 mean?
+*** Back
+The response to the request can be found under another URI using the GET method. When recieved in response to a POST (or PUT/DELETE), the client should presume that the server has received the data and should issue a new GET request to the given URI.
+
+** 304 Not Modified (RFC 7232)
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1643739552809
+:END:
+*** Front
+What does HTTP status code 304 mean?
+***
+Back
+Indicates that the resource has not been modified since the version specified by the request headers If-Modified-Since or If-None-Match. In such a case, there is no need to retransmit the resource since the client still has a previously-downloaded copy.
+
+
+** 305 Use Proxy (since HTTP/1.1)
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1643739552911
+:END:
+*** Front
+What does HTTP status code 305 mean?
+*** Back
+The requested resource is available only through a proxy, the address for which is provided in the response. For security reasons, many HTTP clients (such as Mozilla Firefox and Internet Explorer) do not obey this status code.
+
+** 306 Switch Proxy
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1643739553011
+:END:
+*** Front
+What does HTTP status code 306 mean?
+*** Back
+No longer used. Originally meant "Subsequent requests should use the specified proxy."
+
+** 307 Temporary Redirect (since HTTP/1.1)
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1643739553110
+:END:
+*** Front
+What does HTTP status code 307 mean?
+*** Back
+In this case, the request should be repeated with another URI;however, future requests should still use the original URI. In contrast to how 302 was historically implemented, the request method is not allowed to be changed when reissueing the original request. For example, a POST request should be repeated using another POST request.
+
+
+** 308 Permanent Redirect (RFC 7538)
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1643739553211
+:END:
+*** Front
+What does HTTP status code 308 mean?
+*** Back
+This and all future requests should be directed to the given URI. 308 parallels the behaviour of 301, but does not allow the HTTP method to change. So, for example, submitting a form to a permanently redirected resource may continue smoothly.
+
+* 4xx client errors
