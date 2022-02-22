@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       ffd14a40-650f-4004-9ce3-0a20d08a2702
+:END:
+#+title: 510 Not Extended
+* 510 Not Extended (RFC 2774)
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1645480946818
+:END:
+** Front
+What does HTTP status code 510 mean?
+** Back
+510 Not Extended (RFC 2774)
+
+Further extensions to the request are required for the server to fulfill it.

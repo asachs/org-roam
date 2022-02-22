@@ -609,3 +609,396 @@ What does HTTP status code 411 mean?
 411 Length Required
 
 The request did not specify the length of its content, which is required by the requested resource.
+
+** 412 Precondition Failed (RFC 7232)
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1645479322448
+:END:
+*** Front
+What does HTTP status code 412 mean?
+*** Back
+412 Precondition Failed (RFC 7232)
+
+The server does not meet one of the preconditions that the requester put on the request header fields.
+
+** 413 Payload Too Large (RFC 7231)
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1645479322543
+:END:
+*** Front
+What does HTTP status code 413 mean?
+*** Back
+413 Payload Too Large
+
+The request is larger than the server is willing or able to process. Previously called "Request Entity Too Large"
+
+** 414 URI Too Large (RFC 7231)
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1645479322643
+:END:
+*** Front
+What does HTTP status code 414 mean?
+*** Back
+414 URI Too Large (RFC 7231)
+
+The URI provided was too long for the server to process. Often the result of too much data being encoded as a query-string of a GET request, in which case it should be converted to a POST request. Called "Request URI Too Long" previously.
+
+** 415 Unsupported Media Type (RFC 7231)
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1645479322744
+:END:
+*** Front
+What does HTTP status code 415 mean?
+*** Back
+415 Unsupported Media Type (RFC 7231)
+
+The requested entity has a media type which the server or resource does not support. For example, the client uploads an image as image/svg+xml, but the server requires that images use a different format.
+
+
+** 416 Range not Satisfiable (RFC 7233)
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1645479322841
+:END:
+*** Front
+What does HTTP status code 416 mean?
+*** Back
+416 Range not Satisfiable (RFC 7233)
+
+The client has asked for a portion of the file (byte serving), but the server cannot supply that portion. For example, if the client asked for a part of the file that lies beyond the end of the file. Called "Requested Range Not Satisfiable" previously.
+
+** 417 Expectation Failed
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1645479322940
+:END:
+*** Front
+What does HTTP status code 417 mean?
+*** Back
+417 Expectation Failed
+
+The server cannot meet the requirements of the Expect request-header field.
+
+** 418 I'm a teapot (RFC 2324, RFC 7168)
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1645479323039
+:END:
+*** Front
+What does HTTP status code 418 mean?
+*** Back
+418 I'm a teapot (RFC 2324, RFC 7168)
+
+This code was defined in 1998 as one of the traditional IETF April Fools' jokes, in RFC 2324, Hyper Text Coffee Pot Control Protocol, and is not expected to be implemented by actual HTTP servers. The RFC specifies this code should be returned by requested to brew coffee. This HTTP status is used an Easter egg in some websites, such as Google.com's I'm a teapot easter egg.
+
+** 421 Misdirected Request (RFC 7540)
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1645479323140
+:END:
+*** Front
+What does HTTP status code 421 mean?
+*** Back
+421 Misdirected Request (RFC 7540)
+
+The request was directed at a server that is not able to produce a response (for example because of connection reuse).
+
+** 422 Unprocessable Entity (WebDAV; RFC 4918)
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1645479323240
+:END:
+*** Front
+What does HTTP status code 422 mean?
+*** Back
+422 Unprocessable Entity (WebDAV; RFC 4918)
+
+The request was well-formed but was unable to be followed due to semantic errors.
+
+** 423 Locked (WebDAV; RFC 4918)
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1645479323344
+:END:
+*** Front
+What does HTTP status code 423 mean?
+*** Back
+423 Locked (WebDAV; RFC 4918)
+
+The resource that is being accessed is locked.
+
+** 424 Failed Dependency (WebDAV; RFC 4918)
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1645479323440
+:END:
+*** Front
+What does HTTP status code 424 mean?
+*** Back
+424 Failed Dependency (WebDAV; RFC 4918)
+
+The request failed becuase it depended on another request and that request failed (e.g., a PROPPATCH)
+
+** 425 Too Early (RFC 8470)
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1645479323544
+:END:
+*** Front
+What does HTTP status code 425 mean?
+*** Back
+425 Too Early (RFC 8470)
+
+Indicated that the server is unwilling to risk processing a request that might be replayed.
+
+** 426 Upgrade Required
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1645479323641
+:END:
+*** Front
+What does HTTP status code 426 mean?
+*** Back
+426 Upgrade Required
+
+The client should switch to a different protocol such as TLS/1.3, given in the Upgrade header field.
+
+** 428 Precondition Required (RFC 6585)
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1645479323744
+:END:
+*** Front
+What does HTTP status code 428 mean?
+*** Back
+428 Precondition Required (RFC 6585)
+
+The origin server requires the request to be conditional. Intended to prevent the 'lost update' problem, where a client GETs a resource's state, modifies it, and PUTs it back to the server, when meanwhile a third party has modified the state on the server, leading to conflict.
+
+** 429 Too Many Requests (RFC 6585)
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1645479323845
+:END:
+*** Front
+What does HTTP status code 429 mean?
+*** Back
+429 Too Many Requests (RFC 6585)
+
+The user has sent too many requests in a given amount of time. Intended for use with rate-limiting schemes.
+
+** 431 Request Header Fields Too Large (RFC 6585)
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1645479323943
+:END:
+*** Front
+What does HTTP status code 431 mean?
+*** Back
+431 Request Header Fields Too Large (RFC 6585)
+
+The server is unwilling to process the request because either an individual header field, or all the header fields collectively, are too large.
+
+** 451 Unavailable For Legal Reasons (RFC 7725)
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1645479324040
+:END:
+*** Front
+What does HTTP status code 451 mean?
+*** Back
+451 Unavailable For Legal Reasons (RFC 7725)
+
+A server operator has received a legal demand to deny access to a resouce or to set of resources that includes the requested resource. The code 451 was chosen as a reference to the novel Fahrenheit 451 (see the Acknowledgements in the RFC)
+
+** 500 Internal Server Error
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1645480945868
+:END:
+*** Front
+What does HTTP status code 500 mean?
+*** Back
+500 Internal Server Error
+
+A generic error message, given when an unexpected condition was encountered and no more specific message is suitable.
+
+** 501 Not Implemented
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1645480945970
+:END:
+*** Front
+What does HTTP status code 501 mean?
+*** Back
+501 Not Implemented
+
+The server either does not recongnize the request method, or it lacks the ability to fulfill the request. Usually this implies future availablity (e.g., a new feature of a web-service API)
+
+** 502 Bad Gatway
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1645480946069
+:END:
+*** Front
+What does HTTP status code 502 mean?
+*** Back
+502 Bad Gateway
+
+The server was acting as a gateway or proxy and received an invalid response from the upstream server.
+
+** 503 Service Unavailable
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1645480946194
+:END:
+*** Front
+What does HTTP status code 503 mean?
+*** Back
+503 Service Unavailable
+
+The server cannot handle the request (because it is overloaded or down for maintenance). Generally, this is temporary state.
+
+** 504 Gateway Timeout
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1645480946294
+:END:
+*** Front
+What does HTTP status code 504 mean?
+*** Back
+504 Gateway Timeout
+
+The server acting as a gateway or proxy and did not receive a timely response from the upstream server.
+
+** 505 HTTP Version Not Supported
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1645480946394
+:END:
+*** Front
+What does HTTP status code 505 mean?
+*** Back
+505 HTTP Version Not Supported
+
+The server does not support the HTTP protocol version used in the request.
+
+** 506 Variant Also Negotiates (RC 2295)
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1645480946520
+:END:
+*** Front
+What does HTTP status code 506 mean?
+*** Back
+506 Variant Also Negotiates (RC 2295)
+
+Transparent content negotiation for the request results in a circular reference.
+
+** 507 Insufficient Storage (WebDAV; RFC 4918)
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1645480946620
+:END:
+*** Front
+What does HTTP status code 507 mean?
+*** Back
+507 Insufficient Storage (WebDAV; RFC 4918)
+
+The server is unable to store the representation needed to complete the request.
+
+** 508 Loop Detected (WebDAV; RFC 5842)
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1645480946719
+:END:
+*** Front
+What does HTTP status code 508 mean?
+*** Back
+508 Loop Detected (WebDAV; RFC 5842)
+
+The server detected an infinite loop while processing the request (sent instead of 208 Already Reported).
+
+** 510 Not Extended (RFC 2774)
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1645480946818
+:END:
+*** Front
+What does HTTP status code 510 mean?
+*** Back
+510 Not Extended (RFC 2774)
+
+Further extensions to the request are required for the server to fulfill it.
+
+** 511 Network Authentication Required (RFC 6585)
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1645480946920
+:END:
+*** Front
+What does HTTP status code 511 mean?
+*** Back
+511 Network Authentication Required (RFC 6585)
+
+The client needs to authenticate to gain network access. Intended for use by intercepting proxies to control access to the network(e.g., "captive portals" used to require agreement to Terms of Service before granting fulling Internet access via a Wi-Fi hotspot).

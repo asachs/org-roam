@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       ccfa34b3-860e-4e7e-afbf-e2d5b9361521
+:END:
+#+title: 511 Network Authentication Required
+* 511 Network Authentication Required (RFC 6585)
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1645480946920
+:END:
+** Front
+What does HTTP status code 511 mean?
+** Back
+511 Network Authentication Required (RFC 6585)
+
+The client needs to authenticate to gain network access. Intended for use by intercepting proxies to control access to the network(e.g., "captive portals" used to require agreement to Terms of Service before granting fulling Internet access via a Wi-Fi hotspot).

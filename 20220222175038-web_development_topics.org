@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       75f5087d-0725-4e94-93aa-21e258921246
+:END:
+#+title: Web Development Topics
+
+Here is a list of topics related to Web Application Development
+- [[id:0c144ad5-a17c-4f62-b8d5-06ca5720fe2d][HTTP Status Codes]]
+-

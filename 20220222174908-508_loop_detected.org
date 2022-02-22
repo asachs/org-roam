@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       86011418-27af-44dc-a2b0-96a75fab3d54
+:END:
+#+title: 508 Loop Detected
+* 508 Loop Detected (WebDAV; RFC 5842)
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1645480946719
+:END:
+** Front
+What does HTTP status code 508 mean?
+** Back
+508 Loop Detected (WebDAV; RFC 5842)
+
+The server detected an infinite loop while processing the request (sent instead of 208 Already Reported).
