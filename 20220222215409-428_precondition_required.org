@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1645479323744
+:ID:       39500567-fc80-4854-8893-51df502ddc2f
+:END:
+* Front
+#+title: 428 Precondition Required (RFC 6585)
+What does HTTP status code 428 mean?
+* Back
+428 Precondition Required (RFC 6585)
+
+The origin server requires the request to be conditional. Intended to prevent the 'lost update' problem, where a client GETs a resource's state, modifies it, and PUTs it back to the server, when meanwhile a third party has modified the state on the server, leading to conflict.

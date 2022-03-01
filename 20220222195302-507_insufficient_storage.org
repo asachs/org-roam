@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID:       4f520711-e1bf-433d-bded-c25e6d356a8b
+:END:
+#+title: 507 Insufficient Storage
+
+* 507 Insufficient Storage (WebDAV; RFC 4918)
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1645480946620
+:END:
+*** Front
+What does HTTP status code 507 mean?
+*** Back
+507 Insufficient Storage (WebDAV; RFC 4918)
+
+The server is unable to store the representation needed to complete the request.

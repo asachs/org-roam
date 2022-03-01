@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1645480945970
+:ID:       b59873a5-4caa-45e4-930c-08e5f095931d
+:END:
+* Front
+#+title: 501 Not Implemented
+What does HTTP status code 501 mean?
+* Back
+501 Not Implemented
+
+The server either does not recongnize the request method, or it lacks the ability to fulfill the request. Usually this implies future availablity (e.g., a new feature of a web-service API)

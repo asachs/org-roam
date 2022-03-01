@@ -1,0 +1,14 @@
+* 506 Variant Also Negotiates (RFC 2295)
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1645480946520
+:ID:       5c2cf9be-778a-4486-9087-a10d84b59e54
+:END:
+** Front
+What does HTTP status code 506 mean?
+** Back
+506 Variant Also Negotiates (RC 2295)
+
+Transparent content negotiation for the request results in a circular reference.

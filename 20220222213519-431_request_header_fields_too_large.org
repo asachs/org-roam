@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1645479323943
+:ID:       89ae4e51-9a1d-4a6f-a61d-0ff7e304cdef
+:END:
+* Front
+#+title: 431 Request Header Fields Too Large (RFC 6585)
+What does HTTP status code 431 mean?
+* Back
+431 Request Header Fields Too Large (RFC 6585)
+
+The server is unwilling to process the request because either an individual header field, or all the header fields collectively, are too large.

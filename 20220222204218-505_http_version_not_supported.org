@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1645480946394
+:ID:       f2390021-65f2-48f6-86e4-e572cbe010cd
+:END:
+* Front
+#+title: 505 HTTP Version Not Supported
+What does HTTP status code 505 mean?
+* Back
+505 HTTP Version Not Supported
+
+The server does not support the HTTP protocol version used in the request.
+

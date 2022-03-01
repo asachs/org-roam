@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1645480946194
+:ID:       703e4c22-0e32-426d-af35-74b1a02a73fe
+:END:
+* Front
+#+title: 503 Service Unavailable
+What does HTTP status code 503 mean?
+* Back
+503 Service Unavailable
+
+The server cannot handle the request (because it is overloaded or down for maintenance). Generally, this is temporary state.

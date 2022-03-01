@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1645480946069
+:ID:       051fed63-472c-4ce1-bb0b-26e04c992468
+:END:
+* Front
+#+title: 502 Bad Gatway
+What does HTTP status code 502 mean?
+* Back
+502 Bad Gateway
+
+The server was acting as a gateway or proxy and received an invalid response from the upstream server.

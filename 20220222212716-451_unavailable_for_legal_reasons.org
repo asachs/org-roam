@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1645479324040
+:ID:       1451b54f-6dc9-4ebb-8ca9-16ea004a6cf1
+:END:
+* Front
+#+title: 451 Unavailable For Legal Reasons (RFC 7725)
+What does HTTP status code 451 mean?
+* Back
+451 Unavailable For Legal Reasons (RFC 7725)
+
+A server operator has received a legal demand to deny access to a resouce or to set of resources that includes the requested resource. The code 451 was chosen as a reference to the novel Fahrenheit 451 (see the Acknowledgements in the RFC)
+

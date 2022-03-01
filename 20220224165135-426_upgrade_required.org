@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1645479323641
+:ID:       08d34c11-7c32-42be-84c8-c7a826445b7b
+:END:
+* Front
+#+title: 426 Upgrade Required
+What does HTTP status code 426 mean?
+* Back
+426 Upgrade Required
+
+The client should switch to a different protocol such as TLS/1.3, given in the Upgrade header field.

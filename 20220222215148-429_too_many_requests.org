@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1645479323845
+:ID:       104120c4-8b4f-40ab-909d-2d226585117a
+:END:
+* Front
+#+title: 429 Too Many Requests (RFC 6585)
+What does HTTP status code 429 mean?
+* Back
+429 Too Many Requests (RFC 6585)
+
+The user has sent too many requests in a given amount of time. Intended for use with rate-limiting schemes.

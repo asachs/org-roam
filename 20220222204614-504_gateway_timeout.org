@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1645480946294
+:ID:       4a62aee0-60a7-4b42-bbe5-fc87985e78b7
+:END:
+* Front
+#+title: 504 Gateway Timeout
+What does HTTP status code 504 mean?
+* Back
+504 Gateway Timeout
+
+The server acting as a gateway or proxy and did not receive a timely response from the upstream server.
+
