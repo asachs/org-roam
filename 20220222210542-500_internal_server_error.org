@@ -1,0 +1,14 @@
+* 500 Internal Server Error
+:PROPERTIES:
+:ANKI_DECK: Web Dev
+:ANKI_NOTE_TYPE: Basic
+:ANKI_TAGS: web development http
+:ANKI_NOTE_ID: 1645480945868
+:ID:       d0febcbc-d326-476b-a1c9-0ad25357d248
+:END:
+** Front
+What does HTTP status code 500 mean?
+** Back
+500 Internal Server Error
+
+A generic error message, given when an unexpected condition was encountered and no more specific message is suitable.
